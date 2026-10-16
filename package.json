@@ -1,0 +1,58 @@
+{
+  "name": "fugue-crdt-lab",
+  "version": "0.1.0",
+  "description": "A from-scratch Fugue text CRDT with a network-partition playground",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p playground/tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "traces": "node bench/download-traces.mjs",
+    "bench": "node --import tsx bench/trace.ts",
+    "dev": "vite --config playground/vite.config.ts",
+    "build:playground": "vite build --config playground/vite.config.ts",
+    "preview": "vite preview --config playground/vite.config.ts"
+  },
+  "keywords": [
+    "crdt",
+    "fugue",
+    "collaborative-editing",
+    "local-first",
+    "distributed-systems"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@automerge/automerge": "^3.5.0",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5",
+    "yjs": "^13.6.33"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinshenc/fugue-crdt"
+  }
+}

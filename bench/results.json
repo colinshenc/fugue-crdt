@@ -1,0 +1,60 @@
+{
+  "node": "v22.22.0",
+  "date": "2026-10-16",
+  "results": [
+    {
+      "trace": "automerge-paper",
+      "edits": 259778,
+      "library": "fugue-crdt-lab",
+      "localMs": 190.65967499999988,
+      "remoteMs": 199.693221,
+      "bytes": 1250567,
+      "memoryMB": 29.7
+    },
+    {
+      "trace": "automerge-paper",
+      "edits": 259778,
+      "library": "Yjs",
+      "localMs": 2103.5640430000003,
+      "remoteMs": 16.196459999999206,
+      "bytes": 311034,
+      "memoryMB": 3.3
+    },
+    {
+      "trace": "automerge-paper",
+      "edits": 259778,
+      "library": "Automerge",
+      "localMs": 31602.219156000006,
+      "remoteMs": 1500.555051000003,
+      "bytes": 129295,
+      "memoryMB": null
+    },
+    {
+      "trace": "seph-blog1",
+      "edits": 137993,
+      "library": "fugue-crdt-lab",
+      "localMs": 128.52377299999353,
+      "remoteMs": 365.27274800000305,
+      "bytes": 2156150,
+      "memoryMB": 32.8
+    },
+    {
+      "trace": "seph-blog1",
+      "edits": 137993,
+      "library": "Yjs",
+      "localMs": 917.6099510000058,
+      "remoteMs": 15.750555999999051,
+      "bytes": 338285,
+      "memoryMB": 3.6
+    },
+    {
+      "trace": "seph-blog1",
+      "edits": 137993,
+      "library": "Automerge",
+      "localMs": 20039.300223,
+      "remoteMs": 861.5375529999874,
+      "bytes": 220557,
+      "memoryMB": null
+    }
+  ]
+}

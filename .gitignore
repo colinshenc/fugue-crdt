@@ -1,0 +1,7 @@
+node_modules
+dist
+dist-playground
+bench/traces
+*.log
+.DS_Store
+coverage
