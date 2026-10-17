@@ -1,5 +1,7 @@
 # Fugue CRDT Lab
 
+[![CI](https://github.com/colinshenc/fugue-crdt/actions/workflows/ci.yml/badge.svg)](https://github.com/colinshenc/fugue-crdt/actions/workflows/ci.yml)
+
 A text document that several people can edit at once, even while offline, written from scratch in TypeScript. There's also a playground where you can mess with the network between three editors (cut links, drop packets, add lag) and check that all three still end up with the same text.
 
 [Try the playground](https://colinshenc.github.io/fugue-crdt/)
